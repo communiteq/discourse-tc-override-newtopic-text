@@ -1,0 +1,16 @@
+<script type="text/discourse-plugin" version="0.8">
+    const overrideTexts = settings.newtopic_override_texts;
+
+    if (!overrideTexts.length) return;
+
+    api.onPageChange(() =>{
+        fixTopicButton();
+    });
+    
+    function fixTopicButton() {
+        overrideTexts.split('|').map(i => {
+            const seg = $.map(i.split(','), $.trim);
+            $('body.category-' + seg[0] + ' #create-topic .d-button-label').text(seg[1]);    
+        });
+    }
+</script>

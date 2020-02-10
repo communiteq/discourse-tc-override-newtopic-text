@@ -1,0 +1,15 @@
+{
+  "name": "Override NewTopic Text",
+  "component": true,
+  "license_url": null,
+  "about_url": "https://github.com/discoursehosting/discourse-tc-override-newtopic-text",
+  "authors": "richard@discoursehosting.com",
+  "theme_version": "1.0",
+  "minimum_discourse_version": "2.3.0",
+  "maximum_discourse_version": null,
+  "assets": {
+  },
+  "color_schemes": {
+  },
+  "learn_more": "https://github.com/discoursehosting/discourse-tc-override-newtopic-text"
+}
